@@ -28,12 +28,14 @@ public class ProtobufFormatExtension implements ExternalFormatExtension<Root_met
     private static final String CONTENT_TYPE_2 = " application/vnd.google.protobuf";
 
     @Override
-    public String getFormat() {
+    public String getFormat()
+    {
         return TYPE;
     }
 
     @Override
-    public List<String> getContentTypes() {
+    public List<String> getContentTypes()
+    {
         return Lists.fixedSize.of(CONTENT_TYPE_1, CONTENT_TYPE_2);
     }
 
@@ -44,7 +46,8 @@ public class ProtobufFormatExtension implements ExternalFormatExtension<Root_met
     }
 
     @Override
-    public Root_meta_external_format_protobuf_binding_toPure_introspection_ProtoFileContainer compileSchema(ExternalSchemaCompileContext context) {
+    public Root_meta_external_format_protobuf_binding_toPure_introspection_ProtoFileContainer compileSchema(ExternalSchemaCompileContext context)
+    {
         try
         {
             return new Root_meta_external_format_protobuf_binding_toPure_introspection_ProtoFileContainer_Impl("")
@@ -62,27 +65,32 @@ public class ProtobufFormatExtension implements ExternalFormatExtension<Root_met
     }
 
     @Override
-    public Root_meta_external_shared_format_binding_validation_BindingDetail bindDetails(Root_meta_external_shared_format_binding_Binding binding, CompileContext context) {
+    public Root_meta_external_shared_format_binding_validation_BindingDetail bindDetails(Root_meta_external_shared_format_binding_Binding binding, CompileContext context)
+    {
         return null;
     }
 
     @Override
-    public String metamodelToText(Root_meta_external_format_protobuf_binding_toPure_introspection_ProtoFileContainer schemaDetail) {
+    public String metamodelToText(Root_meta_external_format_protobuf_binding_toPure_introspection_ProtoFileContainer schemaDetail)
+    {
         return null;
     }
 
     @Override
-    public Root_meta_external_shared_format_binding_Binding generateModel(Root_meta_external_shared_format_metamodel_SchemaSet schema, ProtobufToModelConfiguration protobufToModelConfiguration, PureModel pureModel) {
+    public Root_meta_external_shared_format_binding_Binding generateModel(Root_meta_external_shared_format_metamodel_SchemaSet schema, ProtobufToModelConfiguration protobufToModelConfiguration, PureModel pureModel)
+    {
         return null;
     }
 
     @Override
-    public Root_meta_external_shared_format_binding_Binding generateSchema(ModelToSchemaConfiguration modelToSchemaConfiguration, PureModel pureModel) {
+    public Root_meta_external_shared_format_binding_Binding generateSchema(ModelToSchemaConfiguration modelToSchemaConfiguration, PureModel pureModel)
+    {
         return null;
     }
 
     @Override
-    public List<String> getRegisterablePackageableElementNames() {
+    public List<String> getRegisterablePackageableElementNames()
+    {
         return Lists.mutable.empty();
     }
 }
