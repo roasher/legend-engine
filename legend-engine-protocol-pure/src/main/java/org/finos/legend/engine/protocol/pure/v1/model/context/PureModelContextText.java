@@ -20,4 +20,13 @@ public class PureModelContextText extends PureModelContext
 {
     public Protocol serializer;
     public String code;
+
+    public PureModelContextText()
+    {
+    }
+
+    public PureModelContextText(String code)
+    {
+        this.code = code;
+    }
 }

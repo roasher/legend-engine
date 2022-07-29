@@ -1,0 +1,5 @@
+Class foo::domain::Customer
+{
+  id: String[1];
+  name: String[1];
+}
